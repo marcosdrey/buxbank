@@ -1,0 +1,95 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin: 10rem 0;
+    height: 600px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--neutral00);
+    font-family: var(--font002);
+    text-shadow: 0px 0px 5px var(--colordark00);
+}
+
+.login-container {
+    flex: 1 1 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colordark00);
+    border-radius: 20px;
+    width: 700px;
+    box-shadow: 0px 0px 15px var(--colordark00);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: inline-block;
+    width: 120px;
+    color: var(--neutral01);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+form input {
+    padding: 12px;
+    font-size: 1.2rem;
+    background-color: var(--neutral01);
+    border: 1px solid var(--colorpattern00);
+}
+
+div#buttons {
+    display: flex;
+    gap: 30px;
+    margin-top: .9rem;
+}
+
+div#buttons button {
+    padding: 20px;
+    border-radius: 999px;
+    background-color: var(--colorpattern00);
+    font-size: 1.2rem;
+    box-shadow: 0px 0px 15px #0000007e;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+div#buttons button:hover {
+    background-color: var(--colorcomplement01);
+}
+
+div#other-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.1rem;
+    font-size: 1.1rem;
+    color: var(--neutral00);
+}
+
+div#other-options a {
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorpattern03);
+}
+
+div#other-options a:hover {
+    text-decoration: underline;
+}

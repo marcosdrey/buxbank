@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Your Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/templates.css">
+    <link rel="stylesheet" href="styles/accessibility.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/loginpage.css">
+    <link rel="stylesheet" href="styles/footer.css">
+</head>
+<body>
+    <span class="btn-accessibility" title="Accessibility Button *FIC*"><i class="fa-solid fa-hand"></i></span>
+    <header>
+        <nav class="top__navigation">
+            <span class="top__navigation-distance-logo">
+                <a href="index.html" class="top__navigation-logo"><strong class="bux__text__logo">Bux</strong><strong class="bank__text__logo">Bank</strong></a>
+                <span class="menu hidden"><i class="fa-solid fa-bars"></i></span>
+            </span> 
+            <div class="top__navigation-infos">
+                <ul class="top__navigation-links">
+                    <li><a href="index.html#advantages-page" class="top__navigation-item">Advantages</a></li>
+                    <li><a href="index.html#bux_enterprises-page" class="top__navigation-item">BuxEnterprises</a></li>
+                    <li><a href="index.html#about_us-page" class="top__navigation-item">About Us</a></li>
+                </ul>
+                <div class="top__navigation-user">
+                    <a href="login.html"><button type="button" class="top__navigation-login">Your Account</button></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 class="main-title">Login your account!</h1>
+        <div class="login-container">
+            <form method="post" id="form">
+                <div>
+                    <label for="login-email">E-mail:</label>
+                    <input type="email" name="login-email" id="login-email" required placeholder="Type your email" min="3">
+                </div>
+                <div>
+                    <label for="login-password">Password:</label>
+                    <input type="password" name="login-password" id="login-password" required placeholder="Type your password">
+                </div>
+                <div id="buttons">
+                    <button type="reset">Clean</button>
+                    <button type="submit">Log in</button>
+                </div>
+            </form>
+            <div id="other-options">
+                <a href="#">Don't remember my password</a>
+                <p>Don't have an account? <a href="register.html">Create one fastly!</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer-content">
+            <div id="footer-company-info">
+                <h2>BuxBank</h2>
+                <ul>
+                    <li><strong>Address:</strong> Street, State, Country</li>
+                    <li><strong>Email:</strong> buxservice@buxbank.com.br</li>
+                    <li><strong>Phone:</strong> 1234-5678</li>
+                </ul>
+            </div>
+            <div id="footer-legal-info">
+                <h3>Legal Info</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Privacy Cookies</a></li>
+                </ul>
+            </div>
+            <div id="footer-customer-service">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div id="footer-social-media">
+                <h3>Social Media</h3>
+                <ul>
+                    <li><a href="#" target="_blank" rel="external">Facebook</a></li>
+                    <li><a href="#" target="_blank" rel="external">Twitter</a></li>
+                    <li><a href="#" target="_blank" rel="external">Instagram</a></li>
+                    <li><a href="#" target="_blank" rel="external">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-copyright">
+            <p>© 2024 BuxBank. All rights reserved. Developed by <a href="https://github.com/marcosdrey" target="_blank" rel="external" title="Owner">@marcosdrey</a>.</p>
+        </div>
+    </footer>
+    <script src="js/navbar.js"></script>
+    <script type="module" src="js/login.js"></script>
+</body>
+</html>

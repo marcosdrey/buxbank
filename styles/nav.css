@@ -1,0 +1,132 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 15px 0 ;
+    background-color: var(--colorcomplement01);
+    box-shadow: 0px 0px 6px var(--colordark00);
+}
+
+.top__navigation {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.top__navigation-logo {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.bux__text__logo {
+    color: var(--colordark03);
+}
+.bank__text__logo {
+    color: var(--colordark02);
+}
+
+.top__navigation-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.top__navigation-links {
+    display: flex;
+    height: 100%;
+    list-style-type: none;
+    gap: 1rem;
+    padding-right: 15px;
+    border-right: 1px solid var(--colordark00);
+}
+.top__navigation-item {
+    text-decoration: none;
+    color: var(--colordark01);
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+}
+
+.top__navigation-item:hover {
+    color: var(--colorpattern01);
+    text-decoration: underline;
+}
+
+.top__navigation-login {
+    padding: 10px;
+    border-radius: 999px;
+    border: 1px solid var(--colordark01);
+    background-color: var(--colorlight01);
+    color: var(--colordark01);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.top__navigation-login a {
+    color: var(--colordark01);
+    text-decoration: none;
+}
+.top__navigation-login:hover {
+    background-color: var(--colordark01);
+    color: var(--neutral00);
+}
+
+.top__navigation-login:hover a {
+    color: var(--neutral00);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--colordark01);
+    transition: all .2s ease-in-out;
+}
+
+.rotate-menu {
+    transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 630px) {
+    
+    .top__navigation {
+        flex-direction: column;
+    }
+    .top__navigation-distance-logo {
+        height: 100%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top__navigation-infos {
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .top__navigation-links {
+        flex-direction: column;
+        border: none;
+        width: 100%;
+        padding: 0;
+    }
+    .top__navigation-links li {
+        text-align: center;
+        flex: 1 1 0px;
+        border-bottom: 1px solid var(--colordark01);
+    }
+    .top__navigation-item {
+        flex: 1 1 0px;
+        border-bottom: 1px solid var(--colordark01);
+    }
+    
+}

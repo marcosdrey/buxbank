@@ -1,0 +1,16 @@
+.btn-accessibility {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    z-index: 11;
+    background-color: var(--colorcomplement02);
+    color: var(--colordark02);
+    border-radius: 50% 0 0 50%;
+    padding: 12px 14px;
+    cursor: pointer;
+}
+
+.btn-accessibility:hover {
+    background-color: var(--colordark03);
+    color: var(--neutral00);
+}

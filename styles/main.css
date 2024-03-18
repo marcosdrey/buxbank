@@ -1,0 +1,316 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem 0;
+    gap: 9rem;
+}
+.text-emphasis-bg {
+    background-color: var(--colordark01); 
+    color: var(--neutral00);
+    padding: 5px 10px 0;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+.text-emphasis-bg:hover {
+    background-color: var(--colordark02);
+}
+#welcome-page {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    border-radius: 20px;
+    background: url(../images/welcome.jpg) no-repeat top center/cover;
+    height: 800px;
+    box-shadow: 0px 0px 15px var(--colordark00);
+}
+#welcome-titles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#welcome-title {
+    font-size: 5rem;
+    font-family: var(--font002);
+    color: var(--colordark00);
+    text-shadow: 0px 0px 2px var(--colordark00);
+}
+#welcome-subtitle {
+    color: var(--colordark02);
+    text-shadow: 0px 0px 1px var(--colordark00);
+}
+.welcome-all-comments {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.welcome-card-comment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    background-color: var(--colordark00);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--neutral00);
+    box-shadow: 0px 0px 7px var(--colordark03);
+    transition: all .2s ease-in-out;
+}
+
+.welcome-card-comment:hover {
+    transform: scale(1.1);
+    background-color: var(--colordark00);
+}
+
+.welcome-card-profile {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--colordark02);
+}
+
+.welcome-card-profile-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.welcome-card-commentary {
+    text-align: justify;
+    hyphens: auto;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+}
+
+#advantages-page {
+    height: 400px;
+    width: 90%;
+    border-radius: 20px;
+}
+
+#advantages-page h2, #about_us-title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--neutral00);
+    font-family: var(--font002);
+    text-shadow: 0px 0px 5px var(--colordark00);
+}
+
+.advantage-all-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: auto;
+}
+
+.advantage-card {
+    background-color: var(--neutral00);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 20px;
+    width: 400px;
+    color: var(--colorpattern02);
+    box-shadow: 0px 0px 15px var(--colordark00);
+    transition: all .5s ease-in-out;
+}
+
+.advantage-card-icon {
+    font-size: 3rem;
+}
+
+.advantage-card-title {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.advantage-card-text {
+    font-size: 1.3rem;
+    text-align: justify;
+    hyphens: auto;
+}
+.advantage-card-expand {
+    display: none;
+    text-decoration: none;
+    padding: 4px 10px 0px;
+    border-radius: 999px;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--colorpattern02);
+    transition: all .4s ease-in-out;
+    opacity: 0;
+}
+.advantage-card-expand:hover {
+    background-color: var(--colordark02);
+    color: var(--neutral00);
+}
+
+.advantage-card:hover {
+    transform: scale(1.05);
+}
+
+.advantage-card:hover .advantage-card-expand {
+    display: block;
+    opacity: 1;
+}
+
+#bux_enterprises-page {
+    width: 90%;
+    height: 500px;
+    display: flex;
+    background-color: var(--colorcomplement01);
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px var(--colordark00);
+}
+
+#bux_enterprises-page > * {
+    flex: 1 1 0;
+}
+
+#bux_enterprises-infos {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+#bux_enterprises-title {
+    font-size: 3rem;
+    color: var(--colordark02);
+    line-height: 50px;
+}
+#bux_enterprises-subtitle {
+    font-size: 1.8rem;
+    color: var(--colordark03);
+    line-height: 40px;
+}
+
+#bux_enterprises-subtitle strong {
+    color: var(--colorpattern01);
+    font-weight: 900;
+}
+
+#bux_enterprises-text {
+    display: flex;
+    font-size: 1.4rem;
+    text-align: justify;
+    hyphens: auto;
+    flex-grow: 1;
+    align-items: center;
+}
+
+#bux_enterprises-infos-button {
+    width: 100%;
+    padding: 1.1rem 0;
+    border-radius: 999px;
+    border: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: var(--colordark03);
+    color: var(--neutral02);
+    transition: all .3s ease-in-out;
+}
+
+#bux_enterprises-infos-button:hover {
+    background-color: var(--colordark02);
+}
+
+#bux_enterprises-fill {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#bux_enterprises-fill-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 0 20px 20px 0;
+}
+
+#about_us-page {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#about_us-infos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--colordark03);
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--neutral00);
+    box-shadow: 0px 0px 15px var(--colordark00);
+    width: 800px;
+}
+
+details > summary:first-of-type {
+    list-style: none;
+}
+details {
+    width: 100%;
+    height: 48px;
+    transition: all .4s ease;
+}
+
+details[open] {
+    height: 160px;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 1px solid var(--colordark01);
+    transition: all .2s ease-in-out;
+}
+
+summary:hover {
+    background-color: var(--colordark01);
+    color: var(--colorcomplement02);
+    border: 1px solid var(--colorcomplement02);
+}
+
+summary span i {
+    transition: all .3s ease-in-out;
+}
+
+summary:hover span i {
+    transform: rotate(90deg)
+}
+
+details[open] span i {
+    transform: rotate(90deg)
+}
+
+.summary_content {
+    width: 100%;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: var(--colordark01);
+    text-align: justify;
+    hyphens: auto;
+}
